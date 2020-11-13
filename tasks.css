@@ -1,0 +1,185 @@
+
+h1
+{
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.one-islamic , .two-islamic
+{
+    height: 200px;
+    width: 200px;
+    margin-left: 40px;
+    border: 10px solid green;
+    position: absolute;
+}
+
+.two-islamic
+{
+display: inline-block;
+transform: rotate(45deg);
+}
+
+
+
+.traffic{
+    border: 10px solid black;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    width: 70px;
+    background-color: gray;
+    box-shadow: 10px 10px 10px gray;
+}
+.traffic-stick
+{
+    margin: 0px 0px 0px 50px;
+    width: 20px;
+    height: 200px;
+    background-color: black;
+    box-shadow: 10px 10px 10px gray;
+}
+
+
+.one ,.two ,.three 
+{
+    background-color: black;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+     margin: 5px auto;
+}
+.one
+{
+    animation-name: light1;
+    animation-duration: 2s;
+}
+
+.two
+{
+    animation-name: light2;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+}
+
+.three
+{
+    animation-name: light3;
+    animation-duration: 2s;
+    animation-delay:4s ;
+
+}
+
+@keyframes light1 {
+0%{background-color: black;
+}
+50%{
+    background-color: red;
+}
+100%{background-color: black;}
+}
+
+@keyframes light2 {
+    0%{background-color: black;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100%{background-color: black;}
+    }
+
+    @keyframes light3 {
+        0%{background-color: black;
+        }
+        50%{
+            background-color: green;
+        }
+        100%{background-color: black;}
+        }
+
+
+
+.race
+{
+    background-color: gray;
+    padding: 20px;
+}
+
+#car1
+{
+    animation-name: race1;
+    animation-duration:2s ;
+}
+@keyframes race1
+{
+    from{transform: translateX(0px);}
+    to{transform: translateX(1400px);}
+}
+
+#car2
+{
+    animation-name: race2;
+    animation-duration:2s ;
+    animation-delay: .5s;
+}
+@keyframes race2
+{
+    from{transform: translateX(0px);}
+    to{transform: translateX(1400px);}
+}
+
+
+.task-four
+{
+text-align: center;
+width: 300px;
+border: 2px solid black;
+border-radius: 20px;
+box-shadow: 10px 10px 10px gray;
+padding: 50px;
+margin-bottom: 50px;
+}
+
+h2
+{
+    font-size: 0px;
+    animation-name: beat;
+    animation-duration:2s ;
+}
+@keyframes beat
+{
+   0%{
+       font-size: 0px;
+   }
+   50%{
+       font-size: 40px;
+   }
+   100%{
+       font-size: 30px;
+   }
+}
+.task-five
+{
+    height: 150px;
+    width: 150px;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    text-align: center;
+}
+p{
+    background-color: lightblue;
+    height: 60px;
+    width: 5px;
+    margin:20px auto 0px auto;
+    animation-name: oclock;
+    animation-duration:7s ;
+    transform-origin: bottom center;
+    animation-iteration-count: infinite;
+}
+@keyframes oclock
+{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.task-five:hover p{
+    animation-play-state: paused;
+}
